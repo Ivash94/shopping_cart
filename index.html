@@ -1,36 +1,272 @@
+
+
+</html>
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <nav class="shop_nav">
-         <button class="shop_list_btn btn chosen_nav_btn">Shop list</button>
-         <button class="basket_btn btn">Basket</button>
-      </nav>
-      <div class="shopping_cart">
-         <span class="heading">Shoplist</span>
-         <span class="num_items">10 items</span>
-         <div class="list_container">
-            <div class="first">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="shop_nav">
+        <button class="shop_list_btn btn chosen_nav_btn">Shop list</button>
+        <button class="basket_btn btn">Basket</button>
+    </nav>
+    <div class="shopping_cart">
+        <span class="heading">Shoplist</span>
+        <span class="num_items">10 items</span>
+        <div class="hor_line"></div>
+
+        <div class="list_container">
+            <div class="product">
                 <div class="img_side">
-                    <img src="imgs/mekonee-29-vegetables-set-1.svg" alt="" class="onion">
+                    <img src="imgs/mekonee-29-vegetables-set-1.svg" alt="" class="img_style">
                 </div>
-                <div class="price_side">
-                    <div class="product_info">
-                        <p class="product_name">Cucumber</p>
-                        <p class="product_price">$2.99 / kg</p>
-                        <input type="number" name="qu" id="">
+                <div class="price_container">
+                    <div class="price_side">
+                        <div class="product_info">
+                            <p class="product_name">Cucumber</p>
+                            <p class="product_price">$<span class="set_price">2.99</span> / kg</p>
+                            <input type="number" name="qu" id="" class="choose_quantity" step="0.5" min="0" max="10" placeholder="0">
+                            <span class="in_kgs">kgs</span>
+
+                        </div>
+                        <div class="total_price">
+                            <p class="counted_price"><span></span>$0</p>
+                            <button type="button" class="add_btn cuc_btn">Add to basket</button>
+
+                        </div>
                     </div>
-                    <div class="total_price"></div>
                 </div>
             </div>
-         </div>
-      </div>
-      <div class="basket">
-      </div>
-   </body>
+            <div class="product">
+                <div class="img_side">
+                    <img src="imgs/johnny_automatic_big_mushroom.svg" alt="" class="img_style">
+                </div>
+                <div class="price_container">
+                    <div class="price_side">
+                        <div class="product_info">
+                            <p class="product_name">Mushrooms</p>
+                            <p class="product_price">$<span class="set_price">4.99</span> / 100gr</p>
+                            <input type="number" name="qu" id="" class="choose_quantity" step="0.1" min="0" max="10" placeholder="0">
+                            <span class="in_kgs">kg</span>
+
+                        </div>
+                        <div class="total_price">
+                            <p class="counted_price"><span></span>$0</p>
+                            <button type="button" class="add_btn mush_btn">Add to basket</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img_side">
+                    <img src="imgs/mekonee-29-vegetables-set-13.svg" alt="pepper image" class="img_style">
+                </div>
+                <div class="price_container">
+                    <div class="price_side">
+                        <div class="product_info">
+                            <p class="product_name">Pepper</p>
+                            <p class="product_price">$<span class="set_price">0.99</span> / piece</p>
+                            <input type="number" name="qu" id="" class="choose_quantity" step="1" min="0" max="10" placeholder="0">
+                            <span class="in_kgs">pc(s)</span>
+
+                        </div>
+                        <div class="total_price">
+                            <p class="counted_price"><span>$</span>0</p>
+                            <button type="button" class="add_btn pep_btn">Add to basket</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img_side">
+                    <img src="imgs/mekonee-29-vegetables-set-4.svg" alt="carrot image" class="img_style">
+                </div>
+                <div class="price_container">
+                    <div class="price_side">
+                        <div class="product_info">
+                            <p class="product_name">Carrots</p>
+                            <p class="product_price">$<span class="set_price">1.99</span> / kg</p>
+                            <input type="number" name="qu" id="" class="choose_quantity" step="0.5" min="0" max="10" placeholder="0">
+                            <span class="in_kgs">kg</span>
+
+                        </div>
+                        <div class="total_price">
+                            <p class="counted_price"><span>$</span>0</p>
+                            <button type="button" class="add_btn carrot_btn">Add to basket</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img_side">
+                    <img src="imgs/mekonee-29-vegetables-set-6.svg" alt="onion image" class="img_style">
+                </div>
+                <div class="price_container">
+                    <div class="price_side">
+                        <div class="product_info">
+                            <p class="product_name">Onions</p>
+                            <p class="product_price">$<span class="set_price">1.50</span> / kg</p>
+                            <input type="number" name="qu" id="" class="choose_quantity" step="0.5" min="0" max="10" placeholder="0">
+                            <span class="in_kgs">kg</span>
+
+                        </div>
+                        <div class="total_price">
+                            <p class="counted_price"><span>$</span>0</p>
+                            <button type="button" class="add_btn onion_btn">Add to basket</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img_side">
+                    <img src="imgs/mekonee-29-vegetables-set-7.svg" alt="tomato image" class="img_style">
+                </div>
+                <div class="price_container">
+                    <div class="price_side">
+                        <div class="product_info">
+                            <p class="product_name">Tomatos</p>
+                            <p class="product_price">$<span class="set_price">1.99</span> / kg</p>
+                            <input type="number" name="qu" id="" class="choose_quantity" step="0.5" min="0" max="10" placeholder="0">
+                            <span class="in_kgs">kg</span>
+
+                        </div>
+                        <div class="total_price">
+                            <p class="counted_price"><span>$</span>0</p>
+                            <button type="button" class="add_btn tom_btn">Add to basket</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img_side">
+                    <img src="imgs/mekonee-29-vegetables-set-9.svg" alt="chilli image" class="img_style">
+                </div>
+                <div class="price_container">
+                    <div class="price_side">
+                        <div class="product_info">
+                            <p class="product_name">Chili pepper</p>
+                            <p class="product_price">$<span class="set_price">2.50</span> / 100gr</p>
+                            <input type="number" name="qu" id="" class="choose_quantity" step="0.1" min="0" max="10" placeholder="0">
+                            <span class="in_kgs">kg</span>
+
+                        </div>
+                        <div class="total_price">
+                            <p class="counted_price"><span></span>$0</p>
+                            <button type="button" class="add_btn chil_btn">Add to basket</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img_side">
+                    <img src="imgs/eggplant-svgrepo-com.svg" alt="eggplant image" class="img_style">
+                </div>
+                <div class="price_container">
+                    <div class="price_side">
+                        <div class="product_info">
+                            <p class="product_name">Eggplants</p>
+                            <p class="product_price">$<span class="set_price">1.99</span> / kg</p>
+                            <input type="number" name="qu" id="" class="choose_quantity" step="0.5" min="0" max="10" placeholder="0">
+                            <span class="in_kgs">kg</span>
+
+                        </div>
+                        <div class="total_price">
+                            <p class="counted_price"><span>$</span>0</p>
+                            <button type="button" class="add_btn eggpl_btn">Add to basket</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img_side">
+                    <img src="imgs/corn-svgrepo-com.svg" alt="corn image" class="img_style">
+                </div>
+                <div class="price_container">
+                    <div class="price_side">
+                        <div class="product_info">
+                            <p class="product_name">Corn</p>
+                            <p class="product_price">$<span class="set_price">3.49</span> / piece</p>
+                            <input type="number" name="qu" id="" class="choose_quantity" step="1" min="0" max="10" placeholder="0">
+                            <span class="in_kgs">pc(s)</span>
+
+                        </div>
+                        <div class="total_price">
+                            <p class="counted_price"><span>$</span>0</p>
+                            <button type="button" class="add_btn corn_btn">Add to basket</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img_side">
+                    <img src="imgs/cherries-fruit-svgrepo-com.svg" alt="cherries image" class="img_style">
+                </div>
+                <div class="price_container">
+                    <div class="price_side">
+                        <div class="product_info">
+                            <p class="product_name">Cherries</p>
+                            <p class="product_price">$<span class="set_price">1.99</span> / kg</p>
+                            <input type="number" name="qu" id="" class="choose_quantity" step="0.5" min="0" max="10" placeholder="0">
+                            <span class="in_kgs">kg</span>
+
+                        </div>
+                        <div class="total_price">
+                            <p class="counted_price"><span>$</span>0</p>
+                            <button type="button" class="add_btn cherry_btn">Add to basket</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="basket">
+        <div class="shopping_cart">
+            <span class="heading">Basket</span>
+            <span class="num_items">0 items</span>
+            <div class="hor_line"></div>
+            <div class="list_container">
+                <div class="left"></div>
+                <div class="right">
+                    <div class="total_order_price">
+                        <h3>Order summary</h3>
+                        <div class="order_calc">
+                            <div class="order_sum_left">
+                                <p class="subtotal">Subtotal</p>
+                                <p class="shipping">Sipping</p>
+                                <p class="tax">Tax</p>
+                                <p class="total">Total</p>
+                            </div>
+                            <div class="order_sum_right">
+                                <p class="subtotal_sum">$0.00</p>
+                                <p class="shipping_sum">$0.00</p>
+                                <p class="tax_sum">$0.00</p>
+                                <p class="total_sum">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
 </html>
